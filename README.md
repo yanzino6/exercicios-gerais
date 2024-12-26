@@ -1,5 +1,4 @@
 # Exercícios gerais
-
 Este repositório contém os exercícios que serão utilizados durante a disciplina de Programação II :balloon:	
 
 Os exercícios estão dividos por pastas que seguem a mesma ordem do cronograma da disciplina. A intenção que você solucione os exercícios na medida que a disciplina avance, uma vez que a dificuldade vai aumentando.
