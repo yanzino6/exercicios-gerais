@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//bunda cagada
+
+
 Jogador inicializaJogador(int id)
 {
     Jogador jogador1;
