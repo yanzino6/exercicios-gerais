@@ -1,0 +1,21 @@
+==166344== Memcheck, a memory error detector
+==166344== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==166344== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==166344== Command: Resultados/YanSimmer/jogador/prog Resultados/YanSimmer/jogador/Casos/3
+==166344== Parent PID: 166343
+==166344== 
+==166344== Conditional jump or move depends on uninitialised value(s)
+==166344==    at 0x109338: JogaJogador (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166344==    by 0x109734: ComecaJogo (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166344==    by 0x1099B4: main (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166344== 
+==166344== 
+==166344== HEAP SUMMARY:
+==166344==     in use at exit: 0 bytes in 0 blocks
+==166344==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==166344== 
+==166344== All heap blocks were freed -- no leaks are possible
+==166344== 
+==166344== Use --track-origins=yes to see where uninitialised values come from
+==166344== For lists of detected and suppressed errors, rerun with: -s
+==166344== ERROR SUMMARY: 2 errors from 1 contexts (suppressed: 0 from 0)

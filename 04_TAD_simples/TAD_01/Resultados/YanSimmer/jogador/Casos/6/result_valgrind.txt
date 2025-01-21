@@ -1,0 +1,48 @@
+==166883== Memcheck, a memory error detector
+==166883== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==166883== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==166883== Command: Resultados/YanSimmer/jogador/prog Resultados/YanSimmer/jogador/Casos/6
+==166883== Parent PID: 166882
+==166883== 
+==166883== Use of uninitialised value of size 8
+==166883==    at 0x109BFD: EstaMarcadaPosicaoPecaTabuleiro (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x109334: JogaJogador (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x109734: ComecaJogo (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x1099B4: main (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883== 
+==166883== Invalid read of size 1
+==166883==    at 0x109BFD: EstaMarcadaPosicaoPecaTabuleiro (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x109334: JogaJogador (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x109734: ComecaJogo (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x1099B4: main (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==  Address 0x1ffdffe865 is not stack'd, malloc'd or (recently) free'd
+==166883== 
+==166883== 
+==166883== Process terminating with default action of signal 11 (SIGSEGV)
+==166883==  Access not within mapped region at address 0x1FFDFFE865
+==166883==    at 0x109BFD: EstaMarcadaPosicaoPecaTabuleiro (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x109334: JogaJogador (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x109734: ComecaJogo (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==    by 0x1099B4: main (in /home/yan-simmer/Documents/Prog II/Exercícios/exercicios-gerais/04_TAD_simples/TAD_01/Resultados/YanSimmer/jogador/prog)
+==166883==  If you believe this happened as a result of a stack
+==166883==  overflow in your program's main thread (unlikely but
+==166883==  possible), you can try to increase the size of the
+==166883==  main thread stack using the --main-stacksize= flag.
+==166883==  The main thread stack size used in this run was 8388608.
+==166883== 
+==166883== HEAP SUMMARY:
+==166883==     in use at exit: 8,192 bytes in 2 blocks
+==166883==   total heap usage: 2 allocs, 0 frees, 8,192 bytes allocated
+==166883== 
+==166883== LEAK SUMMARY:
+==166883==    definitely lost: 0 bytes in 0 blocks
+==166883==    indirectly lost: 0 bytes in 0 blocks
+==166883==      possibly lost: 0 bytes in 0 blocks
+==166883==    still reachable: 8,192 bytes in 2 blocks
+==166883==         suppressed: 0 bytes in 0 blocks
+==166883== Reachable blocks (those to which a pointer was found) are not shown.
+==166883== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==166883== 
+==166883== Use --track-origins=yes to see where uninitialised values come from
+==166883== For lists of detected and suppressed errors, rerun with: -s
+==166883== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
