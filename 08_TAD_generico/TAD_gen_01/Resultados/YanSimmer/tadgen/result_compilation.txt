@@ -1,0 +1,33 @@
+tadgen.c: In function ‘CriaGenerico’:
+tadgen.c:13:33: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   13 |     tGeneric* gen = (tGeneric*) malloc(sizeof(tGeneric));
+      |                                 ^~~~~~
+tadgen.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    2 | #include <stdio.h>
+  +++ |+#include <stdlib.h>
+    3 | struct generic{
+tadgen.c:13:33: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   13 |     tGeneric* gen = (tGeneric*) malloc(sizeof(tGeneric));
+      |                                 ^~~~~~
+tadgen.c:13:33: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tadgen.c:16:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   16 |         exit(1);
+      |         ^~~~
+tadgen.c:16:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tadgen.c:16:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+tadgen.c:16:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tadgen.c:31:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   31 |         free(gen);
+      |         ^~~~
+tadgen.c:31:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tadgen.c:31:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tadgen.c:31:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tadgen.c:32:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   32 |         exit(1);
+      |         ^~~~
+tadgen.c:32:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tadgen.c: In function ‘DestroiGenerico’:
+tadgen.c:43:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   43 |         free(gen->data);
+      |         ^~~~
+tadgen.c:43:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

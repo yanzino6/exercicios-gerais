@@ -1,2 +1,11 @@
-cc1: fatal error: *.c: No such file or directory
-compilation terminated.
+main.c: In function ‘main’:
+main.c:26:26: warning: passing argument 2 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   26 |     VectorDestroy(alunos,(tAluno*)DestroiAluno);
+      |                          ^~~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          tAluno * {aka struct Aluno *}
+In file included from relatorio.h:4,
+                 from main.c:1:
+vector.h:46:38: note: expected ‘void (*)(void *)’ but argument is of type ‘tAluno *’ {aka ‘struct Aluno *’}
+   46 | void VectorDestroy(Vector *v, void (*destroy)(data_type));
+      |                               ~~~~~~~^~~~~~~~~~~~~~~~~~~
