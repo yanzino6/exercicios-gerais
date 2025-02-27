@@ -1,0 +1,7 @@
+main.c: In function ‘main’:
+main.c:28:14: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   28 |     else if (tipoSensor='T')
+      |              ^~~~~~~~~~
+main.c:10:30: warning: unused variable ‘comando’ [-Wunused-variable]
+   10 |     int quantSensores,ciclos,comando;
+      |                              ^~~~~~~

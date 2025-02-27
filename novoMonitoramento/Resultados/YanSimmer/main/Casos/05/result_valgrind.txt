@@ -1,0 +1,15 @@
+==179604== Memcheck, a memory error detector
+==179604== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==179604== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==179604== Command: Resultados/YanSimmer/main/prog Resultados/YanSimmer/main/Casos/05
+==179604== Parent PID: 179603
+==179604== 
+==179604== 
+==179604== HEAP SUMMARY:
+==179604==     in use at exit: 0 bytes in 0 blocks
+==179604==   total heap usage: 13 allocs, 13 frees, 8,424 bytes allocated
+==179604== 
+==179604== All heap blocks were freed -- no leaks are possible
+==179604== 
+==179604== For lists of detected and suppressed errors, rerun with: -s
+==179604== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
